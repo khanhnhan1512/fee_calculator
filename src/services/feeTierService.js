@@ -46,11 +46,13 @@ export async function deleteTier(id) {
 }
 
 const DEFAULT_TIERS = [
-  { revenue_upper_bound: 100000,   fee: 500   },
-  { revenue_upper_bound: 500000,   fee: 1000  },
-  { revenue_upper_bound: 1000000,  fee: 2000  },
-  { revenue_upper_bound: 5000000,  fee: 5000  },
-  { revenue_upper_bound: 10000000, fee: 10000 },
+  { revenue_upper_bound: 1000000,  fee: 3900 },
+  { revenue_upper_bound: 2000000,  fee: 4500 },
+  { revenue_upper_bound: 3000000,  fee: 4900 },
+  { revenue_upper_bound: 5000000,  fee: 5500 },
+  { revenue_upper_bound: 7000000,  fee: 5900 },
+  { revenue_upper_bound: 10000000, fee: 6000 },
+  { revenue_upper_bound: 15000000, fee: 6500 },
 ]
 
 export async function seedIfEmpty() {

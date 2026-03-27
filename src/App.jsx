@@ -20,7 +20,7 @@ function calculateFee(tiers, revenue, isSaaS) {
   if (!matched) matched = sorted[sorted.length - 1]
 
   const baseFee = matched.fee
-  return isSaaS ? baseFee + 750 : baseFee
+  return isSaaS ? baseFee + 1000 : baseFee
 }
 
 export default function App() {
@@ -157,7 +157,7 @@ export default function App() {
         {/* App header */}
         <div className="mb-7">
           <h1 className="text-3xl font-bold tracking-tight" style={{ color: '#05B4C9' }}>
-            Revenue Fee Calculator
+            Quote Fee Calculator
           </h1>
           <p className="text-sm mt-1" style={{ color: '#666666' }}>
             Estimate advisory fees based on company revenue
@@ -210,7 +210,7 @@ export default function App() {
           <p className="text-xs mb-5" style={{ color: '#888888' }}>
             Sorted by Revenue Upper Bound. The first tier ≥ company revenue is applied.
             {isSaaS && (
-              <span style={{ color: '#05B4C9', fontWeight: 600 }}> +$750 SaaS surcharge active.</span>
+              <span style={{ color: '#05B4C9', fontWeight: 600 }}> +$1,000 SaaS surcharge active.</span>
             )}
           </p>
 
